@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    padding: 20px;
+    background-color: #fafafa;
+}
+ ul {
+    padding: 0;
+    list-style: none;
+}
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+.breadcrumb-link {
+    text-decoration: none;
+    color: #000000;
+    font-family: consolas;
+    font-size: 13px;
+    font-weight: bold;
+}
+.breadcrumb b {
+    margin: 0 7px;
+    color: #D6217E;
+    font-weight: bolder;
+}
+.padre {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 500px;
+     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.hijo {
+     
+    height: 220px;
+    margin-bottom:10px ;
+    margin-left: 12px;
+    border: 1px solid #fafafa;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.image-ig {
+    width: 272px;
+    height: 160px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.image-ig img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+      border-radius: 10px 10px 0 0;
+}
+.text__add1,
+.text__add2,
+.text__add3,
+.text__add4,
+.text__add5,
+.text__add6 {
+    font-size: 11px;
+    margin-left: 15px;
+    font-family: Helvetica;
+}
+.text__bottom1,
+.text__bottom2,
+.text__bottom3,
+.text__bottom4,
+.text__bottom5,
+.text__bottom6 {
+    font-size: 10px;
+    margin-left: 15px;
+    font-family: Helvetica;
+    color: #A5A0A0;
+}
+.add,
+.add i {
+    color: #E15A85;
+    font-size:  15px;
+    text-align: center;
+    margin-left: 10px;
+}
+.download,
+.download i {
+    color: #ED4B60;
+    font-size:  15px;
+    text-align: center;
+}
+/*desktop*/
+@media screen and (max-width: 992px){
+    .hijo{
+        display: block;
+}
+}
+/*tablet*/
+@media screen and (max-width: 768px){
+ 
+     .padre:nth-child(2){
+      margin-right: 0; 
+     }
+     .hijo{
+         display: block;
+         margin-bottom: 40px;
+     }
+}
+/*mobile*/
+@media screen and (max-width: 420px){
+    
+    .padre{
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
